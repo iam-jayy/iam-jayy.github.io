@@ -1,1 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Prajapati</title>
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="w-full px-4">
+        <div class="w-full relative max-w-6xl mx-auto flex items-center justify-between px-2 py-6">
+            <h1 class="text-xl font-semibold text-blue-500">Jay Prajapati</h1>
+            <div class="menu flex items-center justify-center gap-x-5 text-slate-700 text-[18px]">
+                <a href="">About</a>
+                <a href="">Projects</a>
+                <a href="">Contact</a>
+                <a href="">Resume</a>
+            </div>
+            <button id="menubtn" class="grid sm:hidden place-items-center text-3xl text-slate-700">
+                <i class="bx bx-menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="my-3"></div>
+
+    <!-- Home -->
+    <div class="w-full flex items-center justify-center px-4 sm:px-6" style="height: 80%;">
+        <div class="animate__animated animate__backInDown gradientbg w-full h-full max-w-6xl mx-auto flex items-center justify-center flex-col rounded-[20px] px-2">
+            <img class="waveimg w-20 h-20 mb-4" src="images/wave.png" alt="Hello Img" title="Hello">
+            <h1 class="text-3xl sm:text-5xl text-center text-slate-800 font-semibold mb-3">Hi, I'm <span class="text-blue-500">Jay Prajapati</span></h1>
+            <p class="w-full max-w-[440px] text-center text-[16px] sm:text-[18px] leading-6 text-gray-600">A Student and web developer, who love creating beautiful responsive website design.</p>
+        </div>
+    </div>
+
+    <div class="my-14"></div>
+
+    <!-- About -->
+    <div class="flex items-center justify-center gap-x-2 mb-6">
+        <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
+        <h1 class="text-3xl text-slate-900 font-semibold">ABOUT</h1>
+        <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
+    </div>
+    <div class="w-full max-w-6xl flex items-center justify-center flex-col sm:flex-row mx-auto gap-x-8 gap-y-5 px-6 sm:px-0 ">
+        <img class="w-[260px] h-[260px] rounded-2xl shadow-md cover object-cover" src="images/jayimage.jpg" alt="">
+        <div class="w-full max-w-2xl flex flex-col items-start">
+            <h1 class="text-[17px] mb-4 text-slate-900">Hey 👋, I'm Jay!</h1>
+            <h1 class="text-[17px] mb-4 text-slate-900">This is my spot on the web for my projects, education, skills, and everything else.</h1>
+            <h1 class="text-[17px] mb-4 text-slate-900">I'm 4th year engineering student persuing Graduation in information technology from Gujarat Technological University</h1>
+            <h1 class="text-[17px] mb-4 text-slate-900">I enjoy my time creating beutifull websites. Currently I am Learning ReactJs.</h1>
+            <a href="" class="text-sm text-white bg-blue-600 px-3 py-2 rounded-md">Resume</a>
+        </div>
+    </div>
+
+    <div class="my-24"></div>
+
+    <!-- Project -->
+    <div class="flex items-center justify-center gap-x-2 mb-6">
+        <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
+        <h1 class="text-3xl text-slate-900 font-semibold">PROJECT</h1>
+        <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
+    </div>
+
+    <div class="w-full flex justify-center mb-7">
+        <div class="w-full max-w-[360px] flex items-center justify-between bg-white gap-x-4 border rounded-full px-8 py-2">
+            <button class="text-blue-600 font-semibold" onclick="myfun('all')">ALL</button>
+            <button class="text-slate-600" onclick="myfun('web')">WEBSITE</button>
+            <button class="text-slate-600" onclick="myfun('ext')">EXTENSION</button>
+            <button class="text-slate-600" onclick="myfun('ui')">UI</button>
+        </div>
+    </div>
+
+    <div class="w-full max-w-6xl mx-auto flex items-center flex-col justify-center gap-y-6 px-6">
+
+        <!-- Rapidlink -->
+        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/RapidLink.png" alt="">
+            <div class="w-full text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">RapidLInk</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit, aliquam maxime </p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">PHP</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">TailwindCSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">MySQL</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ToastiFy -->
+        <div class="projcard ext w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/Popup.png" alt="">
+            <div class="text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">ToastiFy</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit, aliquam maxime </p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">JQuery</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CoinX -->
+        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/CoinX.png" alt="">
+            <div class="text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">CoinX</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit, aliquam maxime </p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car Ui -->
+        <div class="projcard ui w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/CarRental UI.png" alt="">
+            <div class="text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">CarRental Landing Page</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit, aliquam maxime </p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">TailwindCSS</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RealEstate Ui -->
+        <div class="projcard ui w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/RealEstate.png" alt="">
+            <div class="text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">RealEstate UI</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit, aliquam maxime </p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">TailwindCSS</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="my-24"></div>
+
+    <!-- SKILLS -->
+    <div class="flex items-center justify-center gap-x-2 mb-6">
+        <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
+        <h1 class="text-3xl text-slate-900 font-semibold">SKILLS</h1>
+        <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
+    </div>
+    <div class="w-full max-w-[800px] mx-auto flex items-center flex-row flex-wrap justify-center gap-6">
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+            <p class="text-[13px] mt-1.5 text-slate-900">HTML</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">CSS</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">TailwindCSS</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">Javascript</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">JQuery</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">Java</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">NodeJs</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">MongoDb</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">MySQL</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">PHP</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">Figma</p>
+        </div>
+        <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
+            <p class="text-[13px] mt-1.5 text-slate-900">Flutter</p>
+        </div>
+    </div>
+
+    <div class="my-24"></div>
+
+    <!-- Contact -->
+    <div class="flex items-center justify-center gap-x-2 mb-6">
+        <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
+        <h1 class="text-3xl text-slate-900 font-semibold">CONTACT</h1>
+        <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
+    </div>
+    <div class="w-full max-w-[800px] mx-auto flex items-center flex-row flex-wrap justify-center gap-6">
+        <a href="" class="grid place-items-center bg-blue-500 rounded-full text-white text-2xl p-3">
+            <i class="bx bxs-envelope"></i>
+        </a>
+        <a href="" class="grid place-items-center bg-blue-500 rounded-full text-white text-2xl p-3">
+            <i class="bx bxl-linkedin-square"></i>
+        </a>
+        <a href="" class="grid place-items-center bg-blue-500 rounded-full text-white text-2xl p-3">
+            <i class="bx bxl-instagram-alt"></i>
+        </a>
+    </div>
+
+    <br><br>
+    <script>
+
+        let menu = document.querySelector(".menu");
+        let menubtn = document.getElementById("menubtn");
+        menubtn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+
+        ScrollReveal().reveal('.projcard');
+
+        function myfun(param) {
+            let elem = document.getElementsByClassName("projcard");
+            for (let x = 0; x < elem.length; x++) {
+                const element = elem[x];
+                if (element.classList.contains(param)) {
+                    element.style.display = "flex";
+                } else {
+                    element.style.display = "none"; // Show elements with the "ui" class
+                }
+                if (param === "all") {
+                    element.style.display = "flex";
+                }
+            }
+        }
+        function removeclass(elem) {
+            for (let x = 0; x < elem.length; x++) {
+                elem[x].style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>

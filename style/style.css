@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.waveimg {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.gradientbg {
+  background-color: hsla(0, 0%, 100%, 1);
+  background-image: radial-gradient(at 100% 0%, hsla(223, 100%, 90%, 1) 0px, transparent 50%), radial-gradient(at 25% 89%, hsla(155, 72%, 86%, 1) 0px, transparent 50%), radial-gradient(at 95% 80%, hsla(240, 70%, 91%, 1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(264, 100%, 91%, 1) 0px, transparent 50%);
+}
+
+.menu {
+  position: static;
+}
+
+@media only screen and (max-width: 640px) {
+  .menu {
+    width: 100%;
+    max-width: 160px;
+    position: absolute;
+    right: 6px;
+    top: 65px;
+    display: flex;
+    align-items: start !important;
+    flex-direction: column;
+    row-gap: 10px;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px !important;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+
+  .menu::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    right: 13px;
+    top: -6px;
+    transform: rotate(45deg);
+  }
+}
+
+.active {
+  top: 60px;
+  opacity: 1;
+  pointer-events: auto;
+}
