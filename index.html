@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Meta Viewport -->
     <meta charset="UTF-8">
@@ -29,6 +30,7 @@
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+
 <body>
 
     <!-- Navbar -->
@@ -36,10 +38,9 @@
         <div class="w-full relative max-w-6xl mx-auto flex items-center justify-between px-2 py-6">
             <h1 class="text-xl font-semibold text-blue-500">Jay Prajapati</h1>
             <div class="menu flex items-center justify-center gap-x-5 text-slate-700 text-[18px]">
-                <a href="">About</a>
-                <a href="">Projects</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
                 <a href="">Contact</a>
-                <a href="">Resume</a>
             </div>
             <button id="menubtn" class="grid sm:hidden place-items-center text-3xl text-slate-700">
                 <i class="bx bx-menu"></i>
@@ -54,14 +55,14 @@
         <div class="animate__animated animate__backInDown gradientbg w-full h-full max-w-6xl mx-auto flex items-center justify-center flex-col rounded-[20px] px-2">
             <img class="waveimg w-20 h-20 mb-4" src="images/wave.png" alt="Hello Img" title="Hello">
             <h1 class="text-3xl sm:text-5xl text-center text-slate-800 font-semibold mb-3">Hi, I'm <span class="text-blue-500">Jay Prajapati</span></h1>
-            <p class="w-full max-w-[440px] text-center text-[16px] sm:text-[18px] leading-6 text-gray-600">A Student and web developer, who love creating beautiful responsive website design.</p>
+            <p class="w-full max-w-[440px] text-center text-[16px] sm:text-[18px] leading-6 text-gray-600">A designer and developer who loves creating beautiful, responsive websites and designs.</p>
         </div>
     </div>
 
     <div class="my-14"></div>
 
     <!-- About -->
-    <div class="flex items-center justify-center gap-x-2 mb-6">
+    <div class="flex items-center justify-center gap-x-2 mb-6" id="about">
         <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
         <h1 class="text-3xl text-slate-900 font-semibold">ABOUT</h1>
         <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
@@ -70,57 +71,27 @@
         <img class="w-[260px] h-[260px] rounded-2xl shadow-md cover object-cover" src="images/jayimage.jpg" alt="">
         <div class="w-full max-w-2xl flex flex-col items-start">
             <h1 class="text-[17px] mb-4 text-slate-900">Hey 👋, I'm Jay!</h1>
-            <h1 class="text-[17px] mb-4 text-slate-900">This is my spot on the web for my projects, education, skills, and everything else.</h1>
-            <h1 class="text-[17px] mb-4 text-slate-900">I'm 4th year engineering student persuing Graduation in information technology from Gujarat Technological University</h1>
-            <h1 class="text-[17px] mb-4 text-slate-900">I enjoy my time creating beutifull websites. Currently I am Learning ReactJs.</h1>
-            <a href="" class="text-sm text-white bg-blue-600 px-3 py-2 rounded-md">Resume</a>
+            <h1 class="text-[17px] mb-4 text-slate-900">This is my spot on the web for my projects, skills and everything else.</h1>
+            <h1 class="text-[17px] mb-4 text-slate-900">With a bachelor’s degree in Information Technology from Gujarat Technological University, I bring a passion for UI/UX design, focusing on crafting intuitive and visually compelling interfaces.</h1>
+
+            <h1 class="text-[17px] mb-4 text-slate-900">I enjoy my time creating beautiful websites, focusing on responsive designs that work seamlessly across all devices and deliver a smooth user experience.</h1>
         </div>
     </div>
 
     <div class="my-24"></div>
 
     <!-- Project -->
-    <div class="flex items-center justify-center gap-x-2 mb-6">
+    <div class="flex items-center justify-center gap-x-2 mb-6" id="projects">
         <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
         <h1 class="text-3xl text-slate-900 font-semibold">PROJECT</h1>
         <span class="bg-blue-500 w-[18px] rounded-3xl p-[1px]"></span>
     </div>
 
-    <div class="w-full flex justify-center mb-7">
-        <div class="w-full max-w-[360px] flex items-center justify-between bg-white gap-x-4 border rounded-full px-8 py-2">
-            <button class="text-blue-600 font-semibold" onclick="myfun('all')">ALL</button>
-            <button class="text-slate-600" onclick="myfun('web')">WEBSITE</button>
-            <button class="text-slate-600" onclick="myfun('ext')">EXTENSION</button>
-            <button class="text-slate-600" onclick="myfun('ui')">UI</button>
-        </div>
-    </div>
+
 
     <div class="w-full max-w-6xl mx-auto flex items-center flex-col justify-center gap-y-6 px-6">
 
-        <!-- Rapidlink -->
-        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
-            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/RapidLink.png" alt="">
-            <div class="w-full text-center">
-                <h1 class="text-2xl text-slate-800 font-semibold mb-3">RapidLInk</h1>
-                <p class="text-[15px] text-gray-600 mb-3">Share multiple links at once & connect audiences to all of your content with just one link.</p>
-                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">PHP</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">TailwindCSS</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">MySQL</span>
-                </div>
-                <div class="mt-4 text-2xl text-gray-800">
-                    <a href="">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="bx bx-link"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+
 
         <!-- ToastiFy 
         <div class="projcard ext w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
@@ -139,85 +110,16 @@
                         <i class="bx bxl-github"></i>
                     </a>
                     <a href="">
-                        <i class="bx bx-link"></i>
+                        <i class="bx bx-link text-[16px]"></i>
                     </a>
                 </div>
             </div>
         </div> -->
 
-        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
-            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/STPI Calc.png" alt="">
-            <div class="text-center">
-                <h1 class="text-2xl text-slate-800 font-semibold mb-3">STPI Calculator</h1>
-                <p class="text-[15px] text-gray-600 mb-3">A website for Diploma final year student to compute their meritmark or STPI for Diploma to Degree Admission.</p>
-                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">NodeJS</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span>
-                </div>
-                <div class="mt-4 text-2xl text-gray-800">
-                    <a href="">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="bx bx-link"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        
-
-        
-        <!-- CoinX -->
-        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
-            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/CoinX.png" alt="">
-            <div class="text-center">
-                <h1 class="text-2xl text-slate-800 font-semibold mb-3">CoinX</h1>
-                <p class="text-[15px] text-gray-600 mb-3">Latest real-time tickers, charts, and updates to crypto data and prices from API.</p>
-                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span>
-                </div>
-                <div class="mt-4 text-2xl text-gray-800">
-                    <a href="">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="bx bx-link"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Car Ui -->
-        <div class="projcard ui w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
-            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/CarRental UI.png" alt="">
-            <div class="text-center">
-                <h1 class="text-2xl text-slate-800 font-semibold mb-3">CarRental Landing Page</h1>
-                <p class="text-[15px] text-gray-600 mb-3">User interface design concept for car rental website.</p>
-                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
-                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">TailwindCSS</span>
-                </div>
-                <div class="mt-4 text-2xl text-gray-800">
-                    <a href="">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="bx bx-link"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- RealEstate Ui -->
+        <!-- DONE RealEstate Ui -->
         <div class="projcard ui w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
             <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/RealEstate.png" alt="">
-            <div class="text-center">
+            <div class="w-full text-center">
                 <h1 class="text-2xl text-slate-800 font-semibold mb-3">RealEstate UI</h1>
                 <p class="text-[15px] text-gray-600 mb-3">RealEstate is website made using ReactJS to finding property based on preferences.</p>
                 <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
@@ -227,12 +129,177 @@
                     <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">ReactJS</span>
                 </div>
                 <div class="mt-4 text-2xl text-gray-800">
-                    <a href="">
+                    <!-- <a href="">
                         <i class="bx bxl-github"></i>
+                    </a> -->
+                    <a href="https://jayprajapati9.github.io/housezilla/" class="flex items-center w-full text-center justify-center">
+                        <p class="text-[16px] mr-2">View</p>
+                        <i class="bx bx-link text-[16px]"></i>
                     </a>
-                    <a href="">
-                        <i class="bx bx-link"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car Ui -->
+        <div class="projcard ui w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/CarRental UI.png" alt="">
+            <div class="w-full text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">CarRental Landing Page</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Landing page for car rental portal website.</p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">TailwindCSS</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <!-- <a href="">
+                                        <i class="bx bxl-github"></i>
+                                    </a> -->
+                    <a href="https://jayprajapati9.github.io/car-rental-ui/" class="flex items-center w-full text-center justify-center">
+                        <p class="text-[16px] mr-2">View</p>
+                        <i class="bx bx-link text-[16px]"></i>
                     </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rapidlink -->
+        <div class=" projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/RapidLink.png" alt="">
+            <div class="w-full text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">RapidLInk</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Share multiple links at once & connect audiences to all of your content with just one link.</p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">PHP</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">TailwindCSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">MySQL</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <!-- <a href="">
+                                                                                        <i class="bx bxl-github"></i>
+                                                                                    </a> -->
+                    <a href="videos/RapidLink Mobile.mp4" class="flex items-center w-full text-center justify-center">
+                        <p class="text-[16px] mr-2">View</p>
+                        <i class="bx bx-link text-[16px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CoinX -->
+        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/CoinX.png" alt="">
+            <div class="w-full text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">CoinX</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Latest real-time tickers, charts, and updates to crypto data and prices from API.</p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <!-- <a href="">
+                                                        <i class="bx bxl-github"></i>
+                                                    </a> -->
+                    <a href="https://jayprajapati9.github.io/crypto-tracker/" class="flex items-center w-full text-center justify-center">
+                        <p class="text-[16px] mr-2">View</p>
+                        <i class="bx bx-link text-[16px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- STPI -->
+        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/STPI Calc.png" alt="">
+            <div class="w-full text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">STPI Calculator</h1>
+                <p class="text-[15px] text-gray-600 mb-3">A website for Diploma final year student to compute their meritmark or STPI for Diploma to Degree Admission.</p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">NodeJS</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <!-- <a href="">
+                                                                        <i class="bx bxl-github"></i>
+                                                                    </a> -->
+                    <a href="videos/Stpi Calculator.mp4" class="flex items-center w-full text-center justify-center">
+                        <p class="text-[16px] mr-2">View</p>
+                        <i class="bx bx-link text-[16px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apex -->
+        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/apex.png" alt="">
+            <div class="w-full text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">Apex Resources</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Explore curated resources – coding essentials, design inspiration, all in one place.</p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Framer</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <!-- <a href="">
+                                                                                        <i class="bx bxl-github"></i>
+                                                                                    </a> -->
+                    <a href="https://apexresources.framer.website/" class="flex items-center w-full text-center justify-center">
+                        <p class="text-[16px] mr-2">View</p>
+                        <i class="bx bx-link text-[16px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DaysInn -->
+        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/daysinn.png" alt="">
+            <div class="w-full text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">DaysInn</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Discover Thousands of Hotels Worldwide and Book Your Ideal Gateway Today</p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Tailwind CSS</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800">
+                    <!-- <a href="">
+                                                                                        <i class="bx bxl-github"></i>
+                                                                                    </a> -->
+                    <a href="https://jayprajapati9.github.io/daysinn/" class="flex items-center w-full text-center justify-center">
+                        <p class="text-[16px] mr-2">View</p>
+                        <i class="bx bx-link text-[16px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Twitter clone -->
+        <div class="projcard web w-full max-w-[900px] flex flex-col sm:flex-row items-center gap-y-4 gap-x-3 rounded-2xl px-4 py-4" style="box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);">
+            <img class="w-full max-w-[390px]  sm:w-1/2 rounded-md" src="images/twitter clone.png" alt="">
+            <div class="w-full text-center">
+                <h1 class="text-2xl text-slate-800 font-semibold mb-3">Twitter clone</h1>
+                <p class="text-[15px] text-gray-600 mb-3">Twitter clone developed using Javascript and PHP with responsive HTMLCSS</p>
+                <div class="w-full max-w-[300px] mx-auto text-sm flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">CSS</span><span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">Javascript</span><span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-md">PHP</span>
+                </div>
+                <div class="mt-4 text-2xl text-gray-800 ">
+                    <div class="flex items-center w-full items-center justify-center gap-x-3">
+                        <a href="videos/Twitter Clone Web.mp4" class="flex items-center text-center justify-center">
+                            <p class="text-[16px] mr-2">View Website</p>
+                            <i class="bx bx-link text-[16px]"></i>
+                        </a>
+                        <a href="videos/Twitter Clone Mobile.mp4" class="flex items-center text-center justify-center">
+                            <p class="text-[16px] mr-2">View Mobile</p>
+                            <i class="bx bx-link text-[16px]"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -257,7 +324,7 @@
             <p class="text-[13px] mt-1.5 text-slate-900">CSS</p>
         </div>
         <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
-            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+            <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
             <p class="text-[13px] mt-1.5 text-slate-900">TailwindCSS</p>
         </div>
         <div class="w-[100px] h-[100px] flex items-center justify-center flex-col p-3  rounded-2xl" style="box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);">
@@ -351,4 +418,5 @@
         }
     </script>
 </body>
+
 </html>
